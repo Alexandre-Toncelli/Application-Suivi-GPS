@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rep"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fond"
+    >
+
+
+    <EditText
+        android:id="@+id/etRequete"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="36dp"
+        android:textColor="#00FBFBFB"
+        android:textColorHint="#00FFFFFF"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="invisible" />
+
+    <Button
+        android:id="@+id/button2"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="327dp"
+        android:layout_height="339dp"
+        android:layout_margin="20dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="14dp"
+        android:backgroundTint="#00FFFFFF"
+        android:onClick="check"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:icon="@drawable/go"
+        app:iconTint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.696"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:rippleColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/tvReponse"
+        android:layout_width="32dp"
+        android:layout_height="6dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="484dp"
+        android:background="#00EEEEFF"
+        android:padding="10dp"
+        android:textColor="#FF5722"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="62dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="#00FFFFFF"
+        android:gravity="clip_horizontal|center"
+        android:onClick="info"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        app:icon="@drawable/info"
+        app:iconTint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/num_dossard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="40dp"
+        android:text=" "
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        tools:text=" "
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginBottom="40dp"
+        android:text="Numéro de dossard  :"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/ip"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="78dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="3dp"
+        android:backgroundTint="#00FFFFFF"
+        android:onClick="ip"
+        android:textColor="#00FFFFFF"
+        app:icon="@drawable/settings"
+        app:iconTint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <TextView
+        android:id="@+id/test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="50dp"
+        android:text="TextView"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etRequete" />
+</androidx.constraintlayout.widget.ConstraintLayout>

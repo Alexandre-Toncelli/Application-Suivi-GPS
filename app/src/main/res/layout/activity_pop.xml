@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/white"
+    tools:context=".PopActivity">
+
+    <TextView
+        android:id="@+id/Titre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+
+        android:text="Informations"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/resume"
+        android:layout_width="246dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="36dp"
+        android:text="Cette application a été crée dans le but que vous puissez faire votre course sans le moindre souci !"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Titre" />
+
+    <TextView
+        android:id="@+id/fonct1"
+        android:layout_width="205dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="20dp"
+        android:lineSpacingExtra="8sp"
+        android:text="•  Envoi des positions GPS sécurisé"
+        android:textAlignment="textStart"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resume" />
+
+    <TextView
+        android:id="@+id/fonct2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="•  Suivi préventif"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fonct1" />
+
+    <TextView
+        android:id="@+id/fonct3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="•  Démarrage automatique"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fonct2" />
+
+    <TextView
+        android:id="@+id/consigne"
+        android:layout_width="232dp"
+        android:layout_height="103dp"
+        android:layout_marginTop="40dp"
+        android:text="Tout ce que vous avez à faire c'est d'appuyer sur le bouton &quot;GO&quot; de l'écran principal et de remplir votre numéro de dossard dans les paramètres"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fonct3" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="OK !"
+        app:iconTint="@color/purple_500"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/consigne" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
