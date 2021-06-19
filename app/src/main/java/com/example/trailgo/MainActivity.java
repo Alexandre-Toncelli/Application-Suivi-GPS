@@ -200,7 +200,7 @@ public class MainActivity extends AppCompatActivity {
                             try {
                                 Geocoder geocoder = new Geocoder(MainActivity.this, Locale.getDefault());
                                 List<Address> addresses = geocoder.getFromLocation(location.getLatitude(), location.getLongitude(), 1);
-                                etRequete.setText(String.valueOf("Heure : " + dateformatted + "Lat : " + addresses.get(0).getLatitude() + "long : " + addresses.get(0).getLongitude()));
+                                etRequete.setText(String.valueOf("Num dossard : " + num_dossard.getText() + " Heure : " + dateformatted + " Lat : " + addresses.get(0).getLatitude() + " long : " + addresses.get(0).getLongitude()));
                             } catch (IOException e) {
                                 e.printStackTrace();
                             }
